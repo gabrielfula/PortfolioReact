@@ -65,7 +65,7 @@ export const Themes = {
     white20: "#a0a0a0",
     pink: "#b300b3",
     primary: "#040405",
-    secundary: "#0d0d0e",
+    secundary: "#161616",
     black40: "#040405f4",
     gray: "#838689",
   },
