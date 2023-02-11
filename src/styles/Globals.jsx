@@ -1,0 +1,72 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyled = createGlobalStyle`
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+
+  html,
+  body {
+    font-family: "Archivo";
+    background-color: #040405;
+    color: #fff;
+
+
+    img {
+    max-width: 100%;
+
+    width: auto;
+    height: auto;
+  }
+    
+
+
+    @media(max-width: 1200px){
+        font-size: 95.75%;
+
+        img {
+          width: 90%;
+        }
+    }
+
+    @media(max-width: 720px){
+        font-size: 87.75%;
+
+        img {
+          width: 100%;
+        }
+
+    }
+  }
+
+ 
+  button {
+    cursor: pointer;
+  }
+
+
+  a {
+    text-decoration: none;
+     color: #fff; 
+
+  }
+
+  
+
+`;
+
+export const Themes = {
+  colors: {
+    white: "#ffff",
+    white20: "#a0a0a0",
+    pink: "#b300b3",
+    primary: "#040405",
+    secundary: "#0d0d0e",
+    black40: "#040405f4",
+    gray: "#838689",
+  },
+};
