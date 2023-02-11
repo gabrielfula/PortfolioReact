@@ -58,8 +58,8 @@ export default (Projetos) => {
               <img src={Ecomerce} alt="Imagem Web E-commerce" />
               <div className="desc-projects">
                 <p>
-                  E-commerce é um projeto de restaurante totalmente responsivo
-                  em <span>andamento</span> que está sendo desenvolvido com
+                  E-commerce é um projeto de restaurante totalmente responsivo{" "}
+                  <span>em andamento</span> que está sendo desenvolvido com
                   React JS, Typescript, Styled-Components e consumindo uma API
                   de pagamento. Onde é possível adicionar itens no carrinho e
                   realizar pagamentos.
@@ -80,8 +80,9 @@ export default (Projetos) => {
                 <p>
                   Cálculos é um projeto de mini-calculadora realizado no meu
                   Curso Técnico com o intuito de entender alguns fundamentos do
-                  Javascript, sendo ele o primeiro contato meu com a linguagem ,
-                  foi utilizado HTML, CSS, Javascript.
+                  Javascript, sendo ele o primeiro contato meu com a linguagem,
+                  foi utilizado HTML, CSS, Javascript.{" "}
+                  <span>Futuramente pretendo atualizar esse site</span>
                 </p>
               </div>
               <div className="position-button">
