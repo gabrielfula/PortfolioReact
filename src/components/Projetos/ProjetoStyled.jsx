@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContentProjetos = styled.div`
-  padding: 2.4rem;
+  padding: 2rem;
   text-align: center;
 
   .align-text,
@@ -41,7 +41,7 @@ export const SpaceImage = styled.div`
 
   h3 {
     color: ${({ theme }) => theme.colors.white20};
-    font-size: 20px;
+    font-size: 25px;
   }
 
   img {
@@ -65,5 +65,14 @@ export const SpaceImage = styled.div`
     justify-content: center;
     padding-top: 1.2rem;
     gap: 30px;
+  }
+
+  .desc-projects {
+    padding-top: 20px;
+    
+    p {
+      font-size: 14px;
+      color: ${({ theme }) => theme.colors.gray};
+    }
   }
 `;

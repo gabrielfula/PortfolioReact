@@ -5,7 +5,7 @@ export default (Sobre) => {
   return (
     <>
       <Container id="sobre">
-        <ContentAbout data-aos="zoom-in">
+        <ContentAbout>
           <div className="text-title">
             <h2>Sobre.</h2>
           </div>
@@ -28,14 +28,14 @@ export default (Sobre) => {
           </div>
 
           <section>
-            <div className="education">
+            <div className="education" data-aos="zoom-in">
               <h5>
                 <p>Ensino Médio</p>
                 <span>Completo - (2022)</span>
               </h5>
             </div>
 
-            <div className="education">
+            <div className="education" data-aos="zoom-in">
               <h5>
                 <p>Curso Técnico de Informática na ETEC </p>
 
@@ -43,14 +43,14 @@ export default (Sobre) => {
               </h5>
             </div>
 
-            <div className="education">
+            <div className="education" data-aos="zoom-in">
               <h5>
                 <p>Curso CC50 de Ciência da Computação de Harvard </p>
 
                 <span>Concluído - ( 2022 )</span>
               </h5>
             </div>
-            <div className="education">
+            <div className="education" data-aos="zoom-in">
               <h5>
                 <p>Curso Dominando o React da Dev Samurai </p>
 
