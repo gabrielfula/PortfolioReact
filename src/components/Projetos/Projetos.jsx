@@ -1,6 +1,6 @@
 import { Button, Container } from "../../styles/HomeStyled";
 import TodoList from "/imagens/Todo.jpg";
-import Calculos from "/imagens/matematicos.jpg";
+import Calculadora from "/imagens/calculadora.jpg";
 import Apple from "/imagens/apple.png";
 import Ecomerce from "/imagens/ecomerce.png";
 import { ContentProjetos, ProjetosGrid, SpaceImage } from "./ProjetoStyled";
@@ -75,25 +75,29 @@ export default (Projetos) => {
               <div className="text-image">
                 <h3>Cálculos</h3>
               </div>
-              <img src={Calculos} alt="Imagem Web Calculos" />
+              <img src={Calculadora} alt="Imagem Web Calculos" />
               <div className="desc-projects">
-                <p>
+                <p
+                  style={{
+                    paddingTop: 10,
+                  }}
+                >
                   Cálculos é um projeto de mini-calculadora realizado no meu
                   Curso Técnico com o intuito de entender alguns fundamentos do
                   Javascript, sendo ele o primeiro contato meu com a linguagem,
-                  foi utilizado HTML, CSS, Javascript.{" "}
-                  <span>Futuramente pretendo atualizar esse site</span>
+                  foi utilizado HTML, CSS, Javascript. {" "}
+                  <span>Concluído</span>
                 </p>
               </div>
               <div className="position-button">
                 <Button
-                  href="https://github.com/gabrielfula/Calculos"
+                  href="https://github.com/gabrielfula/Calculadora"
                   target={"_blank"}
                 >
                   Repositório
                 </Button>
                 <Button
-                  href="https://gabrielfula.github.io/Calculos/"
+                  href="https://calculadora-gabrielfula.vercel.app"
                   target={"_blank"}
                 >
                   Projeto
