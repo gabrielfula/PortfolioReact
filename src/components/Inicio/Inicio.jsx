@@ -25,7 +25,6 @@ export default (Inicio) => {
                 className="button"
                 href="../../../public/CurriculoGabrielFulaneto.pdf"
                 download={"GabrielFulanetoCurriculo.pdf"}
-                type="application/pdf"
               >
                 Baixar CV
               </Button>
