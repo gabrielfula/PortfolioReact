@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentTec = styled.div`
+export const ContentTec = styled.section`
   background: ${({ theme }) => theme.colors.secundary};
   width: 100%;
   justify-content: center;

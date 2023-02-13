@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentFooter = styled.div`
+export const ContentFooter = styled.section`
   height: 20vh;
   display: flex;
   padding: 4rem;
