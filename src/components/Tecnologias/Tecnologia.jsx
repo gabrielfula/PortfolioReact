@@ -1,4 +1,9 @@
-import { ContentTec } from "./TecStyled";
+import {
+  ContentIcons,
+  ContentProjects,
+  ContentTec,
+  PositionIcons,
+} from "./TecStyled";
 import {
   SiHtml5,
   SiCss3,
@@ -8,42 +13,45 @@ import {
   SiStyledcomponents,
   SiMysql,
 } from "react-icons/si";
+import { AlignText } from "../Projetos/ProjetoStyled";
+import { useState } from "react";
 
 export default (Tecnologia) => {
   return (
     <>
       <ContentTec id="tecnologia">
-        <div className="align-text">
+        <AlignText>
           <h2>Tecnologias.</h2>
-        </div>
-        <section className="content-projetos">
-          <div className="left-text">
-            <h4>Esses foram os meus aprendizados durante 2 anos de estudos</h4>
+        </AlignText>
+        <ContentProjects>
+          <div>
+            <p>Esses foram os meus aprendizados durante 2 anos de estudos</p>
+            <span>* Passe o mouse por cima *</span>
           </div>
-          <div className="icons">
-            <div className="content-icons" data-aos="fade-right">
+          <PositionIcons data-aos="fade-right">
+            <ContentIcons>
               <SiHtml5 size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiCss3 size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiJavascript size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiReact size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiBootstrap size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiStyledcomponents size={90} />
-            </div>
-            <div className="content-icons" data-aos="fade-right">
+            </ContentIcons>
+            <ContentIcons>
               <SiMysql size={90} />
-            </div>
-          </div>
-        </section>
+            </ContentIcons>
+          </PositionIcons>
+        </ContentProjects>
       </ContentTec>
     </>
   );

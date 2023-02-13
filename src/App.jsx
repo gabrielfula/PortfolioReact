@@ -19,10 +19,9 @@ export default function App() {
     <>
       <Navbar />
       <Inicio />
-      <Sobre id="#sobre" />
-      <Projetos id="#projetos" />
-
-      <Tecnologia id="#tecnologia" />
+      <Sobre />
+      <Projetos />
+      <Tecnologia />
       <Footer />
     </>
   );

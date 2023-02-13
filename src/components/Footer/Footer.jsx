@@ -1,5 +1,5 @@
 import { ContentFooter } from "./FooterStyled";
-import { Button } from "../../styles/HomeStyled";
+import { Button } from "../../styles/Styled";
 
 export default (Footer) => {
   return (

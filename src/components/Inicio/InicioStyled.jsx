@@ -19,19 +19,19 @@ export const ContentInitial = styled.div`
   h3 {
     font-size: 20px;
   }
+`;
 
-  .icons-position {
-    display: flex;
-    gap: 1rem;
-    padding-top: 2rem;
+export const Icons = styled.div`
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
 
-    a {
-      color: ${({ theme }) => theme.colors.white} !important;
+  a {
+    color: ${({ theme }) => theme.colors.white} !important;
 
-      :hover {
-        color: ${({ theme }) => theme.colors.pink} !important;
-        transition: 1s;
-      }
+    :hover {
+      color: ${({ theme }) => theme.colors.pink} !important;
+      transition: 1s;
     }
   }
 `;

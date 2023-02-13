@@ -4,24 +4,6 @@ export const ContentAbout = styled.section`
   background: ${({ theme }) => theme.colors.secundary};
   padding: 5rem 4rem 0 4rem;
 
-  .text-title,
-  .text-subtitle {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-
-  .about-text {
-    padding-top: 30px;
-    text-align: center;
-
-    p {
-      font-size: 14px;
-      color: ${({ theme }) => theme.colors.gray};
-    }
-  }
-
   section {
     display: flex;
     justify-content: space-between;
@@ -38,9 +20,27 @@ export const ContentAbout = styled.section`
     span {
       color: ${({ theme }) => theme.colors.pink};
     }
-
-    .education {
-      padding: 20px;
-    }
   }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  text-align: center;
+`;
+
+export const TextAbout = styled.div`
+  padding-top: 30px;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.gray};
+  }
+`;
+
+export const Animation = styled.div`
+  padding: 20px;
+  width: 100%;
 `;

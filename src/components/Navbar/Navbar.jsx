@@ -1,9 +1,9 @@
-import { MenuStyled, Nav } from "./NavbarStyled";
+import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { useState } from "react";
 
 export default (Navbar) => {
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(false);
 
   const Toggle = () => {
     setShow(!show);
@@ -11,10 +11,10 @@ export default (Navbar) => {
 
   return (
     <>
-      <Nav>
-        <a href="#" className="logo">
+      <Nav data-aos="fade-right">
+        <Logo href="#">
           {"<"} Fula {"/>"}
-        </a>
+        </Logo>
         <MenuStyled show={show}>
           <li>
             <a href="#">Inicio</a>
@@ -32,9 +32,9 @@ export default (Navbar) => {
             <a href="#contato">Contato</a>
           </li>
         </MenuStyled>
-        <div className="hamburguer">
+        <Hamburguer>
           <CgMenuRightAlt size={30} onClick={Toggle} />
-        </div>
+        </Hamburguer>
       </Nav>
     </>
   );

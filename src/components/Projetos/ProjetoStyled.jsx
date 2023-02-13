@@ -4,18 +4,6 @@ export const ContentProjetos = styled.div`
   padding: 2rem;
   text-align: center;
 
-  .align-text,
-  .position-desc-projetos {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-
-    p {
-      font-size: 14px;
-      color: ${({ theme }) => theme.colors.gray};
-    }
-  }
-
   h1 {
     font-size: 20px;
   }
@@ -56,23 +44,35 @@ export const SpaceImage = styled.div`
     }
   }
 
-  .text-image {
+  div {
     padding-bottom: 1rem;
   }
+`;
 
-  .position-button {
-    display: flex;
-    justify-content: center;
-    padding-top: 1.2rem;
-    gap: 30px;
-  }
+export const AlignText = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 
-  .desc-projects {
-    padding-top: 20px;
-    
-    p {
-      font-size: 14px;
-      color: ${({ theme }) => theme.colors.gray};
-    }
+  p {
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.gray};
   }
+`;
+
+export const TextProjects = styled.div`
+  padding-top: 20px;
+
+  p {
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.gray};
+    padding-top: 10px;
+  }
+`;
+
+export const ButtonPosition = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+  gap: 30px;
 `;

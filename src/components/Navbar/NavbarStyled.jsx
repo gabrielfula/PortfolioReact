@@ -14,26 +14,8 @@ export const Nav = styled.nav`
   align-items: center;
   z-index: 999;
 
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-  }
-
-  ul,
   li {
     list-style: none;
-  }
-
-  .hamburguer {
-    display: none;
-    position: fixed;
-    right: 20px;
-    cursor: pointer;
-
-    @media (max-width: 968px) {
-      display: block;
-    }
   }
 `;
 
@@ -67,4 +49,21 @@ export const MenuStyled = styled.ul`
     width: 100vw;
     background: ${({ theme }) => theme.colors.black40};
   }
+`;
+
+export const Hamburguer = styled.div`
+  display: none;
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+
+  @media (max-width: 968px) {
+    display: block;
+  }
+`;
+
+export const Logo = styled.a`
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 `;
