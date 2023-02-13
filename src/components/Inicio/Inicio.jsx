@@ -22,17 +22,12 @@ export default (Inicio) => {
                 <AiFillLinkedin size={30} />
               </a>
               <Button
-                className="button"
                 href="../../../public/CurriculoGabrielFulaneto.pdf"
-<<<<<<< HEAD
-                download
                 type="application/pdf"
-=======
                 download={"GabrielFulanetoCurriculo.pdf"}
->>>>>>> 09059d017b2577ed8eaa6615dbda882674cdff9a
-              >
-                Baixar CV
-              </Button>
+                Baixar
+                CV
+              />
             </Icons>
           </div>
           <div>
