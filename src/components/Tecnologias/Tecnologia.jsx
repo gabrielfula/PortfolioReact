@@ -14,7 +14,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 import { AlignText } from "../Projetos/ProjetoStyled";
-import { useState } from "react";
+import { tecnologia } from "../../Datas";
 
 export default (Tecnologia) => {
   return (
