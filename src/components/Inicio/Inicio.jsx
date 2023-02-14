@@ -24,10 +24,7 @@ export default (Inicio) => {
               <Button
                 href="../../../public/curriculoGabrielFulaneto.pdf"
                 type="application/pdf"
-                download={"curriculoGabriel.pdf"}
-              >
-                Baixar CV
-              </Button>
+                download={"curriculoGabriel.pdf"}>Baixar CV</Button>
             </Icons>
           </div>
           <div>
