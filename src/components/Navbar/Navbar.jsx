@@ -1,5 +1,6 @@
 import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { useEffect } from "react";
 

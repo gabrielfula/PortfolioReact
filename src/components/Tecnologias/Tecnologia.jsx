@@ -15,7 +15,6 @@ import {
 } from "react-icons/si";
 import { AlignText } from "../Projetos/ProjetoStyled";
 
-
 export default (Tecnologia) => {
   return (
     <>
@@ -26,7 +25,6 @@ export default (Tecnologia) => {
         <ContentProjects>
           <div>
             <p>Esses foram os meus aprendizados durante 2 anos de estudos</p>
-            <span>* Passe o mouse por cima *</span>
           </div>
           <PositionIcons data-aos="fade-right">
             <ContentIcons>
