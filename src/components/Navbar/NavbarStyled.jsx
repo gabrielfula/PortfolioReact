@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 export const MenuStyled = styled.ul`
   display: flex;
   gap: 5rem;
-
+  
   a {
     padding: 7px 10px;
     color: ${({ theme }) => theme.colors.gray};
@@ -37,6 +37,7 @@ export const MenuStyled = styled.ul`
       font-size: 17px;
     }
   }
+
 
   @media (max-width: 968px) {
     display: ${({ show }) => (show ? "flex" : "none")};
@@ -54,12 +55,54 @@ export const MenuStyled = styled.ul`
 export const Hamburguer = styled.div`
   display: none;
   position: fixed;
-  right: 20px;
+  top: 1rem;
+  right: 2rem;
   cursor: pointer;
 
   @media (max-width: 968px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self: center;
   }
+
+  .line1,
+  .line3 {
+    width: 20px;
+    height: 2px;
+    background: ${({ theme }) => theme.colors.white};
+  }
+
+  .line2 {
+    width: 50%;
+    height: 2px;
+    background: ${({ theme }) => theme.colors.white};
+  }
+
+  ${({ show }) =>
+    show &&
+    css`
+      .line1 {
+        position: absolute;
+        top: 7px;
+        right: 2px;
+        transform: ${({ show }) => (show ? "rotate(47deg)" : "rotate(0)")};
+        transition: .5s;
+      }
+
+      .line2 {
+        visibility: ${({ show }) => (show ? "hidden" : "visible")};
+        top: 7px;
+        right: 2px;
+      }
+
+      .line3 {
+        position: absolute;
+        transform: ${({ show }) => (show ? "rotate(-47deg)" : "rotate(0)")};
+        transition: .5s; 
+        top: 7px;
+        right: 2px;
+    `}
 `;
 
 export const Logo = styled.a`

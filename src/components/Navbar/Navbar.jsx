@@ -1,6 +1,5 @@
 import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -38,8 +37,10 @@ export default (Navbar) => {
             Contato
           </a>
         </MenuStyled>
-        <Hamburguer>
-          <CgMenuRightAlt size={30} onClick={Toggle} />
+        <Hamburguer show={show}>
+          <div className="line1" onClick={Toggle}></div>
+          <div className="line2" onClick={Toggle}></div>
+          <div className="line3" onClick={Toggle}></div>
         </Hamburguer>
       </Nav>
     </>
