@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Nav = styled.nav`
   position: fixed;
@@ -45,7 +45,7 @@ export const MenuStyled = styled.ul`
     align-items: center;
     position: fixed;
     top: 5vh;
-    height: 100vh;
+    height: ${({ show }) => (show ? "100vh" : "0")};
     width: 100vw;
     background: ${({ theme }) => theme.colors.black40};
   }

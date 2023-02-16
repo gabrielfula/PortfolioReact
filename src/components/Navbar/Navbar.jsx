@@ -1,6 +1,7 @@
 import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export default (Navbar) => {
   const [show, setShow] = useState(false);
@@ -9,6 +10,10 @@ export default (Navbar) => {
     setShow(!show);
   };
 
+  useEffect(() => {
+    document.body.style.overflowY = show ? "hidden" : "auto";
+  }, [show]);
+
   return (
     <>
       <Nav data-aos="fade-right">
@@ -16,21 +21,21 @@ export default (Navbar) => {
           {"<"} Fula {"/>"}
         </Logo>
         <MenuStyled show={show}>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="#sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="#projetos">Projetos</a>
-          </li>
-          <li>
-            <a href="#tecnologia">Tecnologias</a>
-          </li>
-          <li>
-            <a href="#contato">Contato</a>
-          </li>
+          <a href="#" onClick={Toggle}>
+            Inicio
+          </a>
+          <a href="#sobre" onClick={Toggle}>
+            Sobre
+          </a>
+          <a href="#projetos" onClick={Toggle}>
+            Projetos
+          </a>
+          <a href="#tecnologia" onClick={Toggle}>
+            Tecnologias
+          </a>
+          <a href="#contato" onClick={Toggle}>
+            Contato
+          </a>
         </MenuStyled>
         <Hamburguer>
           <CgMenuRightAlt size={30} onClick={Toggle} />
