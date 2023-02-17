@@ -1,7 +1,6 @@
 import { Button, Container } from "../../styles/Styled";
 import PersonalImage from "/imagens/ImagePerson.jpeg";
 import { ContentInitial, Icons } from "./InicioStyled";
-
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 export default (Inicio) => {

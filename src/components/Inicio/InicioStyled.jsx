@@ -9,11 +9,12 @@ export const ContentInitial = styled.div`
     flex-direction: column;
   }
 
-   img {
+  img {
     max-width: 100%;
     max-height: 60vh;
     width: auto;
     height: auto;
+    border-radius: 5px;
   }
 
   h3 {

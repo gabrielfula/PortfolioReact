@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 export const MenuStyled = styled.ul`
   display: flex;
   gap: 5rem;
-  
+
   a {
     padding: 7px 10px;
     color: ${({ theme }) => theme.colors.gray};
@@ -37,7 +37,6 @@ export const MenuStyled = styled.ul`
       font-size: 17px;
     }
   }
-
 
   @media (max-width: 968px) {
     display: ${({ show }) => (show ? "flex" : "none")};
@@ -87,7 +86,7 @@ export const Hamburguer = styled.div`
         top: 7px;
         right: 2px;
         transform: ${({ show }) => (show ? "rotate(47deg)" : "rotate(0)")};
-        transition: .5s;
+        transition: 1s;
       }
 
       .line2 {
