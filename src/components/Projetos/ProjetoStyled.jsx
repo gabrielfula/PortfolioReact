@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContentProjetos = styled.div`
-  padding: 2rem;
   text-align: center;
 
   h1 {
@@ -11,8 +10,8 @@ export const ContentProjetos = styled.div`
 
 export const ProjetosGrid = styled.section`
   display: flex;
+  padding: 5rem;
   justify-content: center;
-  padding: 3rem;
   gap: 40px;
   width: 100%;
   flex: 1 200px;

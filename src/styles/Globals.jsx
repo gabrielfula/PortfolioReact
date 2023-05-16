@@ -8,17 +8,20 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   
-
-  html,
+html {
+  scroll-behavior: smooth;
+}
+  
   body {
     font-family: "Archivo";
     background-color: #040405;
     color: #fff;
+    overflow-x: hidden;
+    
 
 
     img {
     max-width: 100%;
-
     width: auto;
     height: auto;
   }
@@ -55,8 +58,6 @@ export const GlobalStyled = createGlobalStyle`
 
   }
 
-  
-
 `;
 
 export const Themes = {
@@ -66,7 +67,7 @@ export const Themes = {
     pink: "#b300b3",
     primary: "#040405",
     secundary: "#161616",
-    black40: "#040405f4",
+    black40: "#040405c8",
     gray: "#838689",
   },
 };

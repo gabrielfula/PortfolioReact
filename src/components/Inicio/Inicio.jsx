@@ -14,10 +14,13 @@ export default (Inicio) => {
             </h1>
             <h3>Web Developer Front-End</h3>
             <Icons>
-              <a href="https://github.com/gabrielfula">
+              <a href="https://github.com/gabrielfula" target="_blank">
                 <AiOutlineGithub size={30} />
               </a>
-              <a href="https://www.linkedin.com/in/gabriel-fulaneto-9b3863232/">
+              <a
+                href="https://www.linkedin.com/in/gabriel-fulaneto-9b3863232/"
+                target="_blank"
+              >
                 <AiFillLinkedin size={30} />
               </a>
               <Button

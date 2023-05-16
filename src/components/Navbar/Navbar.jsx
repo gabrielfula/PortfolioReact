@@ -1,7 +1,6 @@
 import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
-import { CgMenuRightAlt } from "react-icons/cg";
+
 import { useState } from "react";
-import { useEffect } from "react";
 
 export default (Navbar) => {
   const [show, setShow] = useState(false);
@@ -10,13 +9,9 @@ export default (Navbar) => {
     setShow(!show);
   };
 
-  useEffect(() => {
-    document.body.style.overflowY = show ? "hidden" : "auto";
-  }, [show]);
-
   return (
     <>
-      <Nav data-aos="fade-right">
+      <Nav>
         <Logo href="#">
           {"<"} Fula {"/>"}
         </Logo>

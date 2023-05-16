@@ -102,6 +102,7 @@ export const Hamburguer = styled.div`
         top: 7px;
         right: 2px;
     `}
+    
 `;
 
 export const Logo = styled.a`

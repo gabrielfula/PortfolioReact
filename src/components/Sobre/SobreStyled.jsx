@@ -1,25 +1,65 @@
 import styled from "styled-components";
 
 export const ContentAbout = styled.section`
-  background: ${({ theme }) => theme.colors.secundary};
-  padding: 5rem 4rem 0 4rem;
+  display: flex;
+  background: ${({ theme }) => theme.colors.primary};
+  justify-content: center;
+  padding: 3rem 2rem 1rem 0;
+  align-items: center;
+  gap: 4rem;
 
-  section {
+  @media (max-width: 992px) {
+    font-size: 10px;
+    padding: 5rem;
+  }
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    gap: 8rem;
-    text-align: center;
-    font-size: 16px;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2.5rem;
+    position: relative;
 
-    @media (max-width: 968px) {
-      display: block;
-      flex-direction: column;
-    }
+    &::after {
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 3px;
+      top: 6px;
+      height: 25rem;
+      background: ${({ theme }) => theme.colors.pink};
 
-    span {
-      color: ${({ theme }) => theme.colors.pink};
+      @media (max-width: 992px) {
+        height: 40rem;
+      }
     }
+  }
+
+  li {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+    background: ${({ theme }) => theme.colors.secundary};
+    padding: 7px;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 14px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: -2.3rem;
+      top: 6px;
+      height: 3px;
+      width: 36px;
+
+      background: ${({ theme }) => theme.colors.pink};
+      border-radius: 100px;
+    }
+  }
+  span {
+    color: ${({ theme }) => theme.colors.pink};
   }
 `;
 
@@ -31,16 +71,21 @@ export const Title = styled.div`
 `;
 
 export const TextAbout = styled.div`
-  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 40vh;
   text-align: center;
+  line-height: 1.1rem;
+  width: 50%;
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     color: ${({ theme }) => theme.colors.gray};
-  }
-`;
 
-export const Animation = styled.div`
-  padding: 20px;
-  width: 100%;
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
 `;

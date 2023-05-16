@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContentTec = styled.section`
-  background: ${({ theme }) => theme.colors.secundary};
+  background: ${({ theme }) => theme.colors.primary};
   width: 100%;
   justify-content: center;
   margin-top: 3.5rem;
@@ -20,7 +20,7 @@ export const ContentIcons = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.colors.pink};
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.secundary};
   border-radius: 6px;
   height: 130px;
   width: 200px;
