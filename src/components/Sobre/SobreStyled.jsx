@@ -75,7 +75,6 @@ export const TextAbout = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 10px;
-  height: 40vh;
   text-align: center;
   line-height: 1.1rem;
   width: 50%;

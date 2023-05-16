@@ -6,7 +6,7 @@ export default (Footer) => {
     <>
       <ContentFooter id="contato">
         <div>
-          <h2>Me chame para conversarmos !</h2>
+          <h2>Me chame para conversarmos</h2>
         </div>
         <div>
           <Button

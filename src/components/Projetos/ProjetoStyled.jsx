@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
 export const ContentProjetos = styled.div`
+  padding: 10px 10px 0 10px;
   text-align: center;
 
+  div {
+    padding-top: 10px;
+  }
   h1 {
     font-size: 20px;
+  }
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
