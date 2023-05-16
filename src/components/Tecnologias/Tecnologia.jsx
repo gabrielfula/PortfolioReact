@@ -12,6 +12,7 @@ import {
   SiBootstrap,
   SiStyledcomponents,
   SiMysql,
+  SiNodedotjs,
 } from "react-icons/si";
 import { AlignText } from "../Projetos/ProjetoStyled";
 
@@ -47,6 +48,9 @@ export default (Tecnologia) => {
             </ContentIcons>
             <ContentIcons>
               <SiMysql size={90} />
+            </ContentIcons>
+            <ContentIcons>
+              <SiNodedotjs size={90} />
             </ContentIcons>
           </PositionIcons>
         </ContentProjects>

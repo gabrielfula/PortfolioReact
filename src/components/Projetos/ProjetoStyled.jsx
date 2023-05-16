@@ -25,10 +25,10 @@ export const ProjetosGrid = styled.section`
   justify-content: center;
   gap: 40px;
   width: 100%;
-  flex: 1 200px;
+  flex: 1 300px;
 
   @media (max-width: 992px) {
-    width: 300px;
+    width: 500px;
     flex-wrap: wrap;
   }
 `;

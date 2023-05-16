@@ -29,8 +29,8 @@ export const ContentAbout = styled.section`
       height: 25rem;
       background: ${({ theme }) => theme.colors.pink};
 
-      @media (max-width: 992px) {
-        height: 40rem;
+      @media (max-width: 420px) {
+        height: 35rem;
       }
     }
   }
