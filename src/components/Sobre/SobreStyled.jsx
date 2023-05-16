@@ -4,7 +4,7 @@ export const ContentAbout = styled.section`
   display: flex;
   background: ${({ theme }) => theme.colors.primary};
   justify-content: center;
-  padding: 3rem 2rem 1rem 0;
+  padding: 0 2rem 1rem 0;
   align-items: center;
   gap: 4rem;
 
