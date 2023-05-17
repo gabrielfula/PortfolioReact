@@ -56,7 +56,7 @@ export const ContentApi = styled.div`
       justify-content: center;
     }
 
-    padding: 0 2rem 0 2rem;
+    padding: 0 4rem 0 4rem;
 
     video {
       width: 140%;
