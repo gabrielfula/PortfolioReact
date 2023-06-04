@@ -80,7 +80,7 @@ export const TextAbout = styled.div`
   width: 50%;
 
   p {
-    font-size: 15px;
+    font-size: 17px;
     color: ${({ theme }) => theme.colors.gray};
 
     @media (max-width: 992px) {
