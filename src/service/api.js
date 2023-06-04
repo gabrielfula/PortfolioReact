@@ -1,12 +1,12 @@
 export const data = [
   {
     title: "To Do",
-    desc: "To Do List é um projeto web responsivo, realizado com o intuito de criar novas tarefas, sendo possível adicionar,excluir e marcar as tarefas como concluído. O projeto foidesenvolvido com ReactJS para aprimorar meus conhecimentossobre a tecnologia.",
+    desc: "O projeto To Do List é uma aplicação web desenvolvida com React JS que permite ao usuário gerenciar suas tarefas diárias de forma simples e intuitiva. Com recursos para adicionar, marcar como concluída e excluir tarefas, o projeto oferece uma solução prática para organizar e controlar as atividades diárias.",
     video: "/video/todo-video.mp4",
   },
   {
     title: "Weather",
-    desc: " Weather é um projeto de clima totalmente responsivo que mostra o clima em determinada localização que o usuário quiser, projeto foi desenvolvido com React JS, e consumindo API da OpenWeather para receber os dados climáticos",
+    desc: "O Weather é um projeto totalmente responsivo que foi desenvolvido utilizando React JS e Axios para buscar informações sobre as condições climáticas ao redor do mundo. O objetivo principal do projeto era criar uma aplicação web que permitisse aos usuários consultar as condições climáticas de diferentes regiões.",
     video: "/video/weather-video.mp4",
   },
   {
@@ -18,5 +18,10 @@ export const data = [
     title: "Apple Clone",
     desc: "Apple Clone é um projeto que foi desenvolvido para clonar osite da Apple, sendo esse o meu primeiro projeto realizado noCurso Técnico, com ele aprendi diversos fundamentos doBootstrap e CSS. Foi utilizado HTML, CSS, Bootstrap",
     image: "/imagens/apple.png",
+  },
+  {
+    title: "Ecommerce",
+    desc: "Apresento a vocês o projeto de Ecommerce desenvolvido com React JS, Styled-Components, Axios, React-Router-dom e a API do Mercado Livre combina tecnologias modernas e poderosas para criar uma plataforma de comércio eletrônico dinâmica e visualmente atraente. Com essa solução, os usuários poderão desfrutar de uma experiência única. A integração com a API do Mercado Livre nos permite exibir um catálogo atualizado de produtos, pois podemos buscar informações em tempo real diretamente da plataforma. Isso garante que os usuários tenham acesso a uma ampla variedade de produtos disponíveis para compra, tornando o ecommerce mais atrativo e funcional.",
+    image: "/imagens/ecomerce.png",
   },
 ];

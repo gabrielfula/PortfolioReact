@@ -20,17 +20,12 @@ export const ContentProjetos = styled.div`
 `;
 
 export const ProjetosGrid = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 5rem;
   justify-content: center;
   gap: 40px;
   width: 100%;
-  flex: 1 300px;
-
-  @media (max-width: 992px) {
-    width: 500px;
-    flex-wrap: wrap;
-  }
 `;
 
 export const SpaceImage = styled.div`

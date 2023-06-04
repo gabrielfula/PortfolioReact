@@ -2,6 +2,7 @@ import { Button, Container } from "../../styles/Styled";
 import TodoList from "/imagens/Todo.jpg";
 import Calculadora from "/imagens/calculadora.jpg";
 import Apple from "/imagens/apple.png";
+import Ecommerce from "/imagens/ecomerce.png";
 import Weather from "/imagens/weather.png";
 import {
   AlignText,
@@ -16,6 +17,7 @@ import ModalTodo from "../Modal/Todo/ModalTodo";
 import ModalWeather from "../Modal/weather/ModalWeather";
 import ModalCalculo from "../Modal/calculos/ModalCalculo";
 import ModalApple from "../Modal/apple/ModalApple";
+import ModalEcommerce from "../Modal/ecommerce/ModalEcommerce";
 
 export default function Projetos() {
   const [modalTodo, setModalTodo] = useState(false);
@@ -26,6 +28,8 @@ export default function Projetos() {
 
   const [modalApple, setModalApple] = useState(false);
 
+  const [modalEcommerce, setmodalEcommerce] = useState(false);
+
   return (
     <>
       <Container id="projetos">
@@ -35,8 +39,7 @@ export default function Projetos() {
           </AlignText>
           <div>
             <p>
-              Esses foram alguns projetos realizados durante meu Curso Técnico e
-              cursos adicionais
+              Esses foram alguns projetos realizados no meu período de estudo.
             </p>
           </div>
           <ProjetosGrid data-aos="fade-right">
@@ -53,6 +56,21 @@ export default function Projetos() {
 
               <ButtonPosition>
                 <Button onClick={() => setModalTodo(true)}>Projeto</Button>
+              </ButtonPosition>
+            </SpaceImage>
+
+            <SpaceImage>
+              <div>
+                <h3>E-commerce</h3>
+              </div>
+              <img src={Ecommerce} alt="Imagem Web Ecommerce" />
+              <ModalEcommerce
+                isOpen={modalEcommerce}
+                setCloseModal={() => setmodalEcommerce(!modalEcommerce)}
+              />
+
+              <ButtonPosition>
+                <Button onClick={() => setmodalEcommerce(true)}>Projeto</Button>
               </ButtonPosition>
             </SpaceImage>
 

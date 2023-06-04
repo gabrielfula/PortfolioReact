@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContentModal = styled.div`
   position: absolute;
   background-color: ${({ theme }) => theme.colors.secundary};
-  height: 70vh;
+  height: 60vh;
   width: 85%;
   z-index: 1001;
   bottom: 80%;

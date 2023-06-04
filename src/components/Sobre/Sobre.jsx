@@ -40,7 +40,7 @@ export default (Sobre) => {
 
             <li>
               Curso Técnico de Informática na ETEC
-              <span>Em andamento - ( 2023 )</span>
+              <span>Concluído - ( 2023 )</span>
             </li>
 
             <li>
@@ -52,6 +52,11 @@ export default (Sobre) => {
               Curso Dominando o React da Dev Samurai
               <span>Concluído - ( 2023 )</span>
             </li>
+            {/* 
+            <li>
+              Análise e Desenvolvimento de Sistemas - USF
+              <span>Em andamento - ( 2023 - 2025 )</span>
+            </li> */}
           </ul>
         </ContentAbout>
       </Container>

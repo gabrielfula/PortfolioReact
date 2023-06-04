@@ -42,13 +42,20 @@ export const MenuStyled = styled.ul`
     display: ${({ show }) => (show ? "flex" : "none")};
     flex-direction: column;
     justify-content: center;
+    height: ${({ show }) => (show ? "100vh" : "0")};
+    transition: 1s;
     align-items: center;
     position: fixed;
     top: 5vh;
-    height: ${({ show }) => (show ? "100vh" : "0")};
     width: 100vw;
     background: ${({ theme }) => theme.colors.black40};
   }
+`;
+
+export const Logo = styled.a`
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 `;
 
 export const Hamburguer = styled.div`
@@ -102,11 +109,4 @@ export const Hamburguer = styled.div`
         top: 7px;
         right: 2px;
     `}
-    
-`;
-
-export const Logo = styled.a`
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 3px;
 `;
