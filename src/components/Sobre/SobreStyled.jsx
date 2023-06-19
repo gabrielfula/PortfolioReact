@@ -11,6 +11,7 @@ export const ContentAbout = styled.section`
   @media (max-width: 992px) {
     font-size: 10px;
     padding: 5rem;
+    flex-direction: column;
   }
 
   ul {
