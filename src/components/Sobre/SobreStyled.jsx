@@ -79,6 +79,11 @@ export const TextAbout = styled.div`
   text-align: center;
   line-height: 1.1rem;
   width: 50%;
+  
+  
+    @media (max-width: 992px) {
+      width: 100%;
+  }
 
   p {
     font-size: 17px;
