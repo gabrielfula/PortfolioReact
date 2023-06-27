@@ -26,13 +26,13 @@ export default function ModalEcommerce({ isOpen, setCloseModal }) {
           </ContentApi>
           <ButtonModal>
             <Button
-              href="https://gabrielfula-ecommerce.netlify.app"
+              href="https://github.com/gabrielfula/ecommerce"
               target="_blank"
             >
               Repósitorio
             </Button>
             <Button
-              href="https://github.com/gabrielfula/ecommerce"
+              href="https://gabrielfula-ecommerce.netlify.app"
               target="_blank"
             >
               Deploy
