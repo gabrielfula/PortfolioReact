@@ -2,13 +2,19 @@ import { Button, Container } from "../../styles/Styled";
 import PersonalImage from "/imagens/ImagePerson.jpeg";
 import { ContentInitial, Icons } from "./InicioStyled";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 export default (Inicio) => {
   return (
     <>
       <Container data-aos="fade-down">
         <ContentInitial>
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 3 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0 }}
+          >
             <h1>
               Meu nome é Gabriel <span>Fulaneto!</span>
             </h1>
@@ -31,10 +37,15 @@ export default (Inicio) => {
                 Baixar CV
               </Button>
             </Icons>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0 }}
+          >
             <img src={PersonalImage} alt="Imagem Pessoal" />
-          </div>
+          </motion.div>
         </ContentInitial>
       </Container>
     </>

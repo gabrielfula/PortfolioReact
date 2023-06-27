@@ -26,31 +26,31 @@ export const ProjetosGrid = styled.section`
   justify-content: center;
   gap: 40px;
   width: 100%;
-`;
-
-export const SpaceImage = styled.div`
-  text-align: center;
-  opacity: 1;
-
-  h3 {
-    color: ${({ theme }) => theme.colors.white20};
-    font-size: 25px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-
-    &:hover {
-      opacity: 0.5;
-      transform: scale(1.2);
-      transition: 1s;
-    }
-  }
 
   div {
-    padding-bottom: 1rem;
+    text-align: center;
+    opacity: 1;
+
+    h3 {
+      color: ${({ theme }) => theme.colors.white20};
+      font-size: 25px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+
+      &:hover {
+        opacity: 0.5;
+        transform: scale(1.2);
+        transition: 1s;
+      }
+    }
+
+    div {
+      padding-bottom: 1rem;
+    }
   }
 `;
 

@@ -13,21 +13,21 @@ export const PositionIcons = styled.div`
   justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
-`;
 
-export const ContentIcons = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: ${({ theme }) => theme.colors.pink};
-  background: ${({ theme }) => theme.colors.secundary};
-  border-radius: 6px;
-  height: 130px;
-  width: 200px;
-  flex: 1 200px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ${({ theme }) => theme.colors.pink};
+    background: ${({ theme }) => theme.colors.secundary};
+    border-radius: 6px;
+    height: 130px;
+    width: 200px;
+    flex: 1 200px;
 
-  @media (max-width: 992px) {
-    width: 100px;
+    @media (max-width: 992px) {
+      width: 100px;
+    }
   }
 `;
 

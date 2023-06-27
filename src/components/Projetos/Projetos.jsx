@@ -8,9 +8,9 @@ import {
   AlignText,
   ContentProjetos,
   ProjetosGrid,
-  SpaceImage,
   ButtonPosition,
 } from "./ProjetoStyled";
+import { motion } from "framer-motion";
 
 import { useState } from "react";
 import ModalTodo from "../Modal/Todo/ModalTodo";
@@ -32,7 +32,7 @@ export default function Projetos() {
 
   return (
     <>
-      <Container id="projetos">
+      <Container>
         <ContentProjetos>
           <AlignText>
             <h2>Projetos.</h2>
@@ -42,8 +42,13 @@ export default function Projetos() {
               Esses foram alguns projetos realizados no meu período de estudo.
             </p>
           </div>
-          <ProjetosGrid data-aos="fade-right">
-            <SpaceImage>
+          <ProjetosGrid>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
               <div>
                 <h3>To Do List</h3>
               </div>
@@ -57,9 +62,14 @@ export default function Projetos() {
               <ButtonPosition>
                 <Button onClick={() => setModalTodo(true)}>Projeto</Button>
               </ButtonPosition>
-            </SpaceImage>
+            </motion.div>
 
-            <SpaceImage>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
               <div>
                 <h3>E-commerce</h3>
               </div>
@@ -72,9 +82,14 @@ export default function Projetos() {
               <ButtonPosition>
                 <Button onClick={() => setmodalEcommerce(true)}>Projeto</Button>
               </ButtonPosition>
-            </SpaceImage>
+            </motion.div>
 
-            <SpaceImage>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
               <div>
                 <h3>Weather</h3>
               </div>
@@ -88,9 +103,14 @@ export default function Projetos() {
               <ButtonPosition>
                 <Button onClick={() => setModalWeather(true)}>Projeto</Button>
               </ButtonPosition>
-            </SpaceImage>
+            </motion.div>
 
-            <SpaceImage>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
               <div>
                 <h3>Cálculos</h3>
               </div>
@@ -104,9 +124,14 @@ export default function Projetos() {
               <ButtonPosition>
                 <Button onClick={() => setModalCalculo(true)}>Projeto</Button>
               </ButtonPosition>
-            </SpaceImage>
+            </motion.div>
 
-            <SpaceImage>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
               <div>
                 <h3>Apple Clone</h3>
               </div>
@@ -120,7 +145,7 @@ export default function Projetos() {
               <ButtonPosition>
                 <Button onClick={() => setModalApple(true)}>Projeto</Button>
               </ButtonPosition>
-            </SpaceImage>
+            </motion.div>
           </ProjetosGrid>
         </ContentProjetos>
       </Container>

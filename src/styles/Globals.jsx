@@ -18,8 +18,7 @@ html {
     color: #fff;
     overflow-x: hidden;
     
-
-
+    
     img {
     max-width: 100%;
     width: auto;

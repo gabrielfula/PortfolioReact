@@ -5,7 +5,7 @@ export const ContentModal = styled.div`
   background-color: ${({ theme }) => theme.colors.secundary};
   height: 60vh;
   width: 85%;
-  z-index: 1001;
+  z-index: 999;
   bottom: 80%;
   border-radius: 10px;
   transition: all 1s;
