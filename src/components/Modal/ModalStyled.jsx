@@ -15,7 +15,7 @@ export const ContentModal = styled.div`
     align-items: center;
     flex-direction: column;
     height: auto;
-    width: 55%;
+    width: 80%;
   }
 `;
 
@@ -25,7 +25,13 @@ export const ModalStyle = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
+  @media (max-width: 992px) {
+    /* width: 100%; */
+    max-height: 40px;
+    height: 10px;
+  }
 `;
 
 export const ContentApi = styled.div`
