@@ -8,6 +8,7 @@ import {
   SiStyledcomponents,
   SiMysql,
   SiNodedotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { AlignText } from "../Projetos/ProjetoStyled";
 import { motion } from "framer-motion";
@@ -71,6 +72,14 @@ export default (Tecnologia) => {
               exit={{ opacity: 0 }}
             >
               <SiStyledcomponents size={90} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3, delay: 0.6 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <SiTailwindcss size={90} />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
