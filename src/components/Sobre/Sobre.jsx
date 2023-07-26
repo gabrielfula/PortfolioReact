@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default (Sobre) => {
   return (
     <>
-      <Container>
+      <Container id="sobre">
         <Title>
           <h2>Sobre.</h2>
         </Title>

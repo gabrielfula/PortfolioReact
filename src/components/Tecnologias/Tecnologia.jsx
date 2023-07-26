@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 export default (Tecnologia) => {
   return (
     <>
-      <ContentTec>
+      <ContentTec id="tecnologia">
         <AlignText>
           <h2>Tecnologias.</h2>
         </AlignText>

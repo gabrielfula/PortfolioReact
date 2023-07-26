@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default (Inicio) => {
   return (
     <>
-      <Container data-aos="fade-down">
+      <Container id="inicio">
         <ContentInitial>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
