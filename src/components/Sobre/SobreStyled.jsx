@@ -17,7 +17,7 @@ export const ContentAbout = styled.section`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     padding-left: 2.5rem;
     position: relative;
 
@@ -27,7 +27,7 @@ export const ContentAbout = styled.section`
       content: "";
       width: 3px;
       top: 6px;
-      height: 25rem;
+      height: 30rem;
       background: ${({ theme }) => theme.colors.pink};
 
       @media (max-width: 420px) {
@@ -79,10 +79,9 @@ export const TextAbout = styled.div`
   text-align: center;
   line-height: 1.1rem;
   width: 50%;
-  
-  
-    @media (max-width: 992px) {
-      width: 100%;
+
+  @media (max-width: 992px) {
+    width: 100%;
   }
 
   @media (max-width: 992px) {

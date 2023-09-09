@@ -55,22 +55,27 @@ export default (Sobre) => {
             </li>
 
             <li>
-              Curso Técnico de Informática na ETEC
+              Curso Técnico de Informática - ETEC
               <span>Concluído - ( 2023 )</span>
             </li>
 
             <li>
-              Ensino Médio
+              Curso AWS - Escola da Nuvem
+              <span>Em andamento - (2023)</span>
+            </li>
+
+            <li>
+              Ensino Médio - SESI
               <span>Completo - (2022)</span>
             </li>
 
             <li>
-              Curso CC50 de Ciência da Computação de Harvard
+              Curso CC50 de Ciência da Computação - Harvard
               <span>Concluído - ( 2022 )</span>
             </li>
 
             <li>
-              Curso Dominando o React da Dev Samurai
+              Curso Dominando o React - Dev Samurai
               <span>Concluído - ( 2023 )</span>
             </li>
           </motion.ul>
