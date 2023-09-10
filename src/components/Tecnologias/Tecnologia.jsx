@@ -9,6 +9,8 @@ import {
   SiMysql,
   SiNodedotjs,
   SiTailwindcss,
+  SiExpress,
+  SiAmazonaws,
 } from "react-icons/si";
 import { AlignText } from "../Projetos/ProjetoStyled";
 import { motion } from "framer-motion";
@@ -33,6 +35,7 @@ export default (Tecnologia) => {
             >
               <SiHtml5 size={90} />
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 3, delay: 0.2 }}
@@ -96,6 +99,22 @@ export default (Tecnologia) => {
               exit={{ opacity: 0 }}
             >
               <SiNodedotjs size={90} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3, delay: 0.8 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <SiExpress size={90} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3, delay: 0.8 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <SiAmazonaws size={90} />
             </motion.div>
           </PositionIcons>
         </ContentProjects>

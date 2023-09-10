@@ -44,10 +44,6 @@ export const ContentProjects = styled.div`
   div {
     text-align: center;
 
-    p {
-      padding-bottom: 4rem;
-    }
-
     span {
       color: ${({ theme }) => theme.colors.gray};
     }
