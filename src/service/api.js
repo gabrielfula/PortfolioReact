@@ -21,7 +21,11 @@ export const data = [
   },
   {
     title: "Ecommerce",
-    desc: "Apresento a vocês o projeto de Ecommerce desenvolvido com React JS, Styled-Components, Axios, React-Router-dom e a API do Mercado Livre combina tecnologias modernas e poderosas para criar uma plataforma de comércio eletrônico dinâmica e visualmente atraente. Com essa solução, os usuários poderão desfrutar de uma experiência única. A integração com a API do Mercado Livre nos permite exibir um catálogo atualizado de produtos, pois podemos buscar informações em tempo real diretamente da plataforma. Isso garante que os usuários tenham acesso a uma ampla variedade de produtos disponíveis para compra, tornando o ecommerce mais atrativo e funcional.",
+    desc: "Apresento a vocês o projeto de Ecommerce desenvolvido com React JS, Styled-Components, Axios, React-Router-dom e a API do Mercado Livre combina tecnologias modernas e poderosas para criar uma plataforma de comércio eletrônico dinâmica e visualmente atraente. Com essa solução, os usuários poderão desfrutar de uma experiência única. A integração com a API do Mercado Livre nos permite exibir um catálogo atualizado de produtos, pois podemos buscar informações em tempo real diretamente da platagiforma. Isso garante que os usuários tenham acesso a uma ampla variedade de produtos disponíveis para compra, tornando o ecommerce mais atrativo e funcional.",
     image: "/imagens/ecomerce.png",
+  },
+  {
+    title: "Textos Motivacionais",
+    desc: "Ao desenvolver uma página web motivacional com React, TypeScript e Tailwind CSS, criamos uma aplicação moderna, atraente e fácil de manter. Essas tecnologias oferecem ferramentas poderosas para criar componentes reutilizáveis, estilização simplificada e integração com APIs externas para gerar os textos motivacionais.",
   },
 ];

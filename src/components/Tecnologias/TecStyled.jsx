@@ -25,6 +25,7 @@ export const PositionIcons = styled.div`
     width: 200px;
     flex: 1 200px;
 
+
     @media (max-width: 992px) {
       width: 100px;
     }
