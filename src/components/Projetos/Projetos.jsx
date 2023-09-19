@@ -4,6 +4,7 @@ import Calculadora from "/imagens/calculadora.jpg";
 import Apple from "/imagens/apple.png";
 import Ecommerce from "/imagens/ecomerce.png";
 import Weather from "/imagens/weather.png";
+import Motivational from "/imagens/motivational.png";
 import {
   AlignText,
   ContentProjetos,
@@ -18,6 +19,7 @@ import ModalWeather from "../Modal/weather/ModalWeather";
 import ModalCalculo from "../Modal/calculos/ModalCalculo";
 import ModalApple from "../Modal/apple/ModalApple";
 import ModalEcommerce from "../Modal/ecommerce/ModalEcommerce";
+import ModalMotivational from "../Modal/motivational/ModalMotivational";
 
 export default function Projetos() {
   const [modalTodo, setModalTodo] = useState(false);
@@ -29,6 +31,8 @@ export default function Projetos() {
   const [modalApple, setModalApple] = useState(false);
 
   const [modalEcommerce, setmodalEcommerce] = useState(false);
+
+  const [modalText, setModalText] = useState(false);
 
   return (
     <>
@@ -144,6 +148,25 @@ export default function Projetos() {
 
               <ButtonPosition>
                 <Button onClick={() => setModalApple(true)}>Projeto</Button>
+              </ButtonPosition>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.5 }}
+            >
+              <div>
+                <h3>Textos Motivacionais</h3>
+              </div>
+              <img src={Motivational} alt="Imagem Web Todo" />
+              <ModalMotivational
+                isOpen={modalText}
+                setCloseModal={() => setModalText(!modalText)}
+              />
+              <ButtonPosition>
+                <Button onClick={() => setModalText(true)}>Projeto</Button>
               </ButtonPosition>
             </motion.div>
           </ProjetosGrid>
