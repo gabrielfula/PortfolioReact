@@ -20,7 +20,8 @@ export const Content = styled.section`
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 1rem;
+    color: ${({ theme }) => theme.colors.gray};
   }
 `;
 

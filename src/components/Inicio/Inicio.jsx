@@ -4,7 +4,7 @@ import { TextInicio, Content, Icons } from "./styles";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-export default (Inicio) => {
+export default function Inicio() {
   return (
     <>
       <Content id="inicio">
@@ -50,4 +50,4 @@ export default (Inicio) => {
       </Content>
     </>
   );
-};
+}
