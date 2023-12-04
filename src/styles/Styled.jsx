@@ -1,30 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
-  padding-top: 23vh;
-  width: 100%;
-  height: 100%;
-
-  @media (max-width: 968px) {
-    padding-top: 9vh;
-  }
-
-  span {
-    color: ${({ theme }) => theme.colors.pink};
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h3 {
-    color: ${({ theme }) => theme.colors.gray};
-  }
-`;
-
 export const Button = styled.a`
   padding: 7px 25px;
   border: none;
+  text-align: center;
   color: ${({ theme }) => theme.colors.white};
   border-radius: 10px;
   background: rgb(255, 0, 255);
@@ -39,4 +18,10 @@ export const Button = styled.a`
     color: ${({ theme }) => theme.colors.pink};
     transition: ease-in-out 1s;
   }
+`;
+
+export const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;

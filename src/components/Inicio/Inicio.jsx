@@ -1,14 +1,14 @@
 import { Button, Container } from "../../styles/Styled";
 import PersonalImage from "/imagens/ImagePerson.jpeg";
-import { ContentInitial, Icons } from "./InicioStyled";
+import { TextInicio, Content, Icons } from "./styles";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 export default (Inicio) => {
   return (
     <>
-      <Container id="inicio">
-        <ContentInitial>
+      <Content id="inicio">
+        <TextInicio>
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 3 }}
@@ -38,16 +38,16 @@ export default (Inicio) => {
               </Button>
             </Icons>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 2 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0 }}
-          >
-            <img src={PersonalImage} alt="Imagem Pessoal" />
-          </motion.div>
-        </ContentInitial>
-      </Container>
+        </TextInicio>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0 }}
+        >
+          <img src={PersonalImage} alt="Imagem Pessoal" />
+        </motion.div>
+      </Content>
     </>
   );
 };

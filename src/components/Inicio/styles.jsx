@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const ContentInitial = styled.div`
+export const Content = styled.section`
   display: flex;
   gap: 30px;
-  padding: 0 6rem 0px 3rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 
   @media (max-width: 968px) {
     flex-direction: column;
@@ -33,6 +35,20 @@ export const Icons = styled.div`
     :hover {
       color: ${({ theme }) => theme.colors.pink} !important;
       transition: 1s;
+    }
+  }
+`;
+
+export const TextInicio = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem 2rem;
+
+  h1 {
+    font-size: 3rem;
+    span {
+      color: ${({ theme }) => theme.colors.pink};
     }
   }
 `;

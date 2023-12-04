@@ -1,18 +1,14 @@
 import styled from "styled-components";
 
-export const ContentAbout = styled.section`
+export const ContentAbout = styled.div`
   display: flex;
+  flex-direction: column;
   background: ${({ theme }) => theme.colors.primary};
   justify-content: center;
-  padding: 0 2rem 1rem 0;
+  padding: 0rem 2rem 1rem 0;
   align-items: center;
   gap: 4rem;
-
-  @media (max-width: 992px) {
-    font-size: 10px;
-    padding: 5rem;
-    flex-direction: column;
-  }
+  height: 100vh;
 
   ul {
     display: flex;
@@ -26,8 +22,9 @@ export const ContentAbout = styled.section`
       left: 0;
       content: "";
       width: 3px;
-      top: 6px;
-      height: 30rem;
+      top: 0;
+      bottom: 1rem;
+      height: 60vh;
       background: ${({ theme }) => theme.colors.pink};
 
       @media (max-width: 420px) {
@@ -51,10 +48,9 @@ export const ContentAbout = styled.section`
       position: absolute;
       content: "";
       left: -2.3rem;
-      top: 6px;
+      top: 0;
       height: 3px;
       width: 36px;
-
       background: ${({ theme }) => theme.colors.pink};
       border-radius: 100px;
     }
@@ -62,13 +58,29 @@ export const ContentAbout = styled.section`
   span {
     color: ${({ theme }) => theme.colors.pink};
   }
+
+  div {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+      font-size: 10px;
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }
 `;
 
 export const Title = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   letter-spacing: 1px;
   text-align: center;
+
+  @media (max-width: 992px) {
+    padding-top: 6rem;
+  }
 `;
 
 export const TextAbout = styled.div`

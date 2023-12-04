@@ -1,4 +1,4 @@
-import { Hamburguer, Logo, MenuStyled, Nav } from "./NavbarStyled";
+import { Hamburguer, Logo, MenuStyled, Nav } from "./styles";
 
 import { useState } from "react";
 

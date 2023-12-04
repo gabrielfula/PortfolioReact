@@ -1,4 +1,4 @@
-import { ContentProjects, ContentTec, PositionIcons } from "./TecStyled";
+import { ContentIcons, ContentTec, PositionIcons } from "./styles";
 import {
   SiHtml5,
   SiCss3,
@@ -11,21 +11,17 @@ import {
   SiTailwindcss,
   SiExpress,
   SiAmazonaws,
+  SiNextdotjs,
+  SiPrisma,
 } from "react-icons/si";
-import { AlignText } from "../Projetos/ProjetoStyled";
 import { motion } from "framer-motion";
 
-export default (Tecnologia) => {
+export default function Tecnologia() {
   return (
     <>
       <ContentTec id="tecnologia">
-        <AlignText>
-          <h2>Tecnologias.</h2>
-        </AlignText>
-        <ContentProjects>
-          <div>
-            <p>Esses foram os meus aprendizados durante 2 anos de estudos</p>
-          </div>
+        <h2>Tecnologias.</h2>
+        <ContentIcons>
           <PositionIcons>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -34,6 +30,7 @@ export default (Tecnologia) => {
               exit={{ opacity: 0 }}
             >
               <SiHtml5 size={90} />
+              {/* <p>HTML5</p> */}
             </motion.div>
 
             <motion.div
@@ -51,6 +48,15 @@ export default (Tecnologia) => {
               exit={{ opacity: 0 }}
             >
               <SiJavascript size={90} />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3, delay: 0.4 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <SiNextdotjs size={90} />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
@@ -108,17 +114,26 @@ export default (Tecnologia) => {
             >
               <SiExpress size={90} />
             </motion.div>
+
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 3, delay: 0.8 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
+              <SiPrisma size={90} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3, delay: 0.9 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
               <SiAmazonaws size={90} />
             </motion.div>
           </PositionIcons>
-        </ContentProjects>
+        </ContentIcons>
       </ContentTec>
     </>
   );
-};
+}

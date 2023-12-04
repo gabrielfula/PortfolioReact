@@ -6,27 +6,29 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-
   
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
   
   body {
     font-family: "Archivo";
     background-color: #040405;
     color: #fff;
-    overflow-x: hidden;
-    
     
     img {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-    
 
+  section {
+    scroll-snap-align: center;
+  }
 
+ 
+  
     @media(max-width: 1200px){
         font-size: 95.75%;
 

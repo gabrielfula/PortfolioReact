@@ -1,18 +1,19 @@
-import { ContentAbout, TextAbout, Title } from "./SobreStyled";
-import { Container } from "../../styles/Styled";
+import { ContentAbout, TextAbout, Title } from "./styles";
 import { motion } from "framer-motion";
 
 export default (Sobre) => {
   return (
     <>
-      <Container id="sobre">
+      <ContentAbout id="sobre">
         <Title>
           <h2>Sobre.</h2>
+          <p>Educação e Cursos adicionais</p>
         </Title>
-        <Title>
-          <h5>Educação e Cursos adicionais</h5>
-        </Title>
-        <ContentAbout>
+        <div
+          style={{
+            gap: "5rem",
+          }}
+        >
           <TextAbout>
             <motion.p
               initial={{ opacity: 0, x: -100 }}
@@ -20,11 +21,8 @@ export default (Sobre) => {
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
-              Meu nome é Gabriel, sou desenvolvedor Front End, tenho 18 anos,
-              nasci e moro Campinas. Eu terminei o Ensino Médio ano passado e em
-              2023 completei meu curso técnico em Informática na ETEC.
-              Atualmente eu estou cursando Análise e Desenvolvimento de Sistemas
-              na USF.
+              Meu nome é Gabriel, sou Desenvolvedor Web, Atualmente eu estou
+              cursando Análise e Desenvolvimento de Sistemas na USF.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -100 }}
@@ -61,12 +59,7 @@ export default (Sobre) => {
 
             <li>
               Curso AWS - Escola da Nuvem
-              <span>Em andamento - (2023)</span>
-            </li>
-
-            <li>
-              Ensino Médio - SESI
-              <span>Completo - (2022)</span>
+              <span>Incompleto - (2023)</span>
             </li>
 
             <li>
@@ -79,8 +72,8 @@ export default (Sobre) => {
               <span>Concluído - ( 2023 )</span>
             </li>
           </motion.ul>
-        </ContentAbout>
-      </Container>
+        </div>
+      </ContentAbout>
     </>
   );
 };

@@ -6,6 +6,11 @@ export const ContentTec = styled.section`
   justify-content: center;
   margin-top: 3.5rem;
   padding: 20px;
+  height: 100vh;
+
+  h2 {
+    text-align: center;
+  }
 `;
 
 export const PositionIcons = styled.div`
@@ -25,6 +30,18 @@ export const PositionIcons = styled.div`
     width: 200px;
     flex: 1 200px;
 
+    &:hover {
+      transition: 1s all ease-in-out;
+      p {
+        display: flex;
+        transition: 1s all ease-in-out;
+      }
+    }
+
+    p {
+      color: ${({ theme }) => theme.colors.white};
+      display: none;
+    }
 
     @media (max-width: 992px) {
       width: 100px;
@@ -32,10 +49,10 @@ export const PositionIcons = styled.div`
   }
 `;
 
-export const ContentProjects = styled.div`
+export const ContentIcons = styled.div`
   display: flex;
   justify-content: space-around;
-  padding-top: 5rem;
+  padding: 5rem 3rem;
   gap: 5rem;
 
   @media (max-width: 968px) {

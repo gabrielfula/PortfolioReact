@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   top: 0;
   width: 100%;
   background: ${({ theme }) => theme.colors.primary};
-  height: 7vh;
+  height: 3rem;
   color: ${({ theme }) => theme.colors.grey};
   padding: 7px;
   display: flex;
