@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "../../styles/Styled";
 import { ContainerProjeto, DescProjeto } from "./styles";
 
-export default function Work({ title, img, desc, link }) {
+export default function Work({ title, img, desc, link, github }) {
   return (
     <>
       <ContainerProjeto>
@@ -28,7 +28,7 @@ export default function Work({ title, img, desc, link }) {
               <Button href={link} target="blank">
                 Deploy
               </Button>
-              <Button href={link} target="blank">
+              <Button href={github} target="blank">
                 Repositório
               </Button>
             </div>

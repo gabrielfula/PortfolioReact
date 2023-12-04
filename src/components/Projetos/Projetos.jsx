@@ -19,6 +19,7 @@ export default function Projetos() {
                 img={item.img}
                 desc={item.desc}
                 link={item.link}
+                github={item.github}
               />
             </>
           );
