@@ -7,8 +7,7 @@ export const ContentProjetos = styled.section`
   flex-direction: column;
 
   @media (max-width: 960px) {
-    padding-top: 30rem;
-    gap: 10rem;
+    padding-top: 5rem;
   }
 `;
 
