@@ -5,10 +5,14 @@ export const ContentAbout = styled.div`
   flex-direction: column;
   background: ${({ theme }) => theme.colors.primary};
   justify-content: center;
-  padding: 0rem 2rem 1rem 0;
+  padding: 10rem 2rem 1rem 0;
   align-items: center;
   gap: 4rem;
   height: 100vh;
+
+  @media (max-width: 420px) {
+    height: 35rem;
+  }
 
   ul {
     display: flex;
