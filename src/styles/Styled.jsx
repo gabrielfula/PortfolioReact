@@ -19,9 +19,3 @@ export const Button = styled.a`
     transition: ease-in-out 1s;
   }
 `;
-
-export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
