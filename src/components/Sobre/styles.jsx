@@ -5,13 +5,14 @@ export const ContentAbout = styled.div`
   flex-direction: column;
   background: ${({ theme }) => theme.colors.primary};
   justify-content: center;
-  padding: 10rem 2rem 1rem 0;
+  padding: 0 2rem 1rem 0;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
   height: 100vh;
 
   @media (max-width: 960px) {
-    padding-top: 20rem;
+    height: 100%;
+    padding-top: 3rem;
   }
 
   ul {
@@ -28,7 +29,7 @@ export const ContentAbout = styled.div`
       width: 3px;
       top: 0;
       bottom: 1rem;
-      height: 60vh;
+      height: 50vh;
       background: ${({ theme }) => theme.colors.pink};
 
       @media (max-width: 420px) {
