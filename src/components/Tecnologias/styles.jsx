@@ -6,7 +6,7 @@ export const ContentTec = styled.section`
   justify-content: center;
   margin-top: 3.5rem;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
 
   h2 {
     text-align: center;
