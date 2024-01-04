@@ -1,4 +1,4 @@
-import { Button, Container } from "../../styles/Styled";
+import { Button } from "../../styles/Styled";
 import PersonalImage from "/imagens/ImagePerson.jpeg";
 import { TextInicio, Content, Icons } from "./styles";
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
@@ -18,7 +18,7 @@ export default function Inicio() {
             <h1>
               Meu nome é Gabriel <span>Fulaneto!</span>
             </h1>
-            <h3>Web Developer Front-End</h3>
+            <h3>Web Developer</h3>
             <Icons>
               <a href="https://github.com/gabrielfula" target="_blank">
                 <AiOutlineGithub size={30} />
@@ -30,9 +30,9 @@ export default function Inicio() {
                 <AiFillLinkedin size={30} />
               </a>
               <Button
-                href="/CurriculoGabrielFulaneto.pdf"
+                href="/GabrielFulanetoCV.pdf"
                 type="application/pdf"
-                download={"curriculoGabriel.pdf"}
+                download={"GabrielFulanetoCV.pdf"}
               >
                 Baixar CV
               </Button>
