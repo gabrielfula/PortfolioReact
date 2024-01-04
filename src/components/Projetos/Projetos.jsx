@@ -9,7 +9,7 @@ export default function Projetos() {
       <Sticky>
         <h1>Projetos Pessoais</h1>
       </Sticky>
-      <AnimatePresence>
+      <div>
         {projetos.map((item) => {
           return (
             <>
@@ -24,7 +24,7 @@ export default function Projetos() {
             </>
           );
         })}
-      </AnimatePresence>
+      </div>
     </ContentProjetos>
   );
 }

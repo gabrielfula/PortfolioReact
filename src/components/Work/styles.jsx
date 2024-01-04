@@ -4,13 +4,17 @@ export const ContainerProjeto = styled.section`
   height: 100vh;
   padding: 6rem 0;
 
+  @media (max-width: 968px) {
+    padding-top: 2rem;
+  }
+
   div {
     display: flex;
     justify-content: center;
     gap: 5rem;
 
     @media (max-width: 968px) {
-      gap: 2rem;
+      gap: 1rem;
     }
 
     img {
@@ -30,10 +34,14 @@ export const DescProjeto = styled.div`
   background: #191919;
   border-radius: 10px;
   align-items: center;
-  height: auto;
-  max-width: auto;
+  /* height: auto; */
   margin: 0 5rem;
   padding: 5rem;
+
+  @media (max-width: 968px) {
+    margin: 0 1rem;
+    padding: 5rem;
+  }
 
   .text {
     display: flex;

@@ -10,8 +10,8 @@ export const ContentAbout = styled.div`
   gap: 4rem;
   height: 100vh;
 
-  @media (max-width: 420px) {
-    height: 35rem;
+  @media (max-width: 960px) {
+    padding-top: 20rem;
   }
 
   ul {
