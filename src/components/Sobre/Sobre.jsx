@@ -11,7 +11,7 @@ export default (Sobre) => {
         </Title>
         <div
           style={{
-            gap: "5rem",
+            gap: "2rem",
           }}
         >
           <TextAbout>
@@ -21,8 +21,10 @@ export default (Sobre) => {
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
-              Meu nome é Gabriel, sou Desenvolvedor Web, Atualmente eu estou
-              cursando Análise e Desenvolvimento de Sistemas na USF.
+              Olá, meu nome é Gabriel e sou apaixonado por Desenvolvimento Web.
+              Atualmente, estou cursando Análise e Desenvolvimento de Sistemas,
+              buscando constantemente aprimorar minhas habilidades e
+              conhecimentos na área de tecnologia.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -100 }}
@@ -30,14 +32,11 @@ export default (Sobre) => {
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
-              Como desenvolvedor web, possuo competências em HTML, CSS e
-              Javascript, além de conhecimento em React JS, Styled-Components,
-              Bootstrap 5 e MySQL e Node JS com Express. Sou capaz de criar
-              sites e aplicações web com design responsivo e interatividade,
-              utilizando as tecnologias mais recentes e ferramentas de
-              desenvolvimento. Além disso, tenho habilidade para solucionar
-              problemas e trabalhar em equipe para entregar projetos de alta
-              qualidade.
+              Com uma base sólida em diversas tecnologias, desde o uso do
+              Next.js e React.js para criação de interfaces dinâmicas até o
+              trabalho com bancos de dados MySQL, tenho experiência em HTML,
+              CSS, JavaScript, TypeScript, Tailwind CSS, Styled-Components,
+              Bootstrap 5, AWS, Express e Node.js.
             </motion.p>
           </TextAbout>
 
