@@ -8,8 +8,8 @@ import Footer from "./components/Footer/Footer";
 export default function App() {
   return (
     <>
+      <Navbar />
       <section>
-        <Navbar />
         <Inicio />
       </section>
       <section>
