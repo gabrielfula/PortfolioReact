@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ContainerProjeto = styled.section`
   flex: 1;
+  
+
   div {
     display: flex;
     justify-content: center;
@@ -24,6 +26,7 @@ export const ContainerProjeto = styled.section`
 
 export const DescProjeto = styled.section`
   display: flex;
+  gap: 2rem;
   justify-content: center;
   border-radius: 10px;
   align-items: center;
