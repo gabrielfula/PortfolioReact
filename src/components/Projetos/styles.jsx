@@ -3,12 +3,6 @@ import styled from "styled-components";
 export const ContentProjetos = styled.section`
   height: 100%;
   padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 960px) {
-    padding-top: 5rem;
-  }
 `;
 
 export const Sticky = styled.div`

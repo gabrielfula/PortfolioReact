@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerProjeto = styled.section`
-  height: 100vh;
-  padding: 6rem 0;
+  height: 100%;
+  margin-top: 2rem;
 
-  @media (max-width: 968px) {
+  /* @media (max-width: 968px) {
     padding-top: 2rem;
-  }
+  } */
 
   div {
     display: flex;

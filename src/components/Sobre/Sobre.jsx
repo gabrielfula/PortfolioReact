@@ -17,7 +17,7 @@ export default (Sobre) => {
           <TextAbout>
             <motion.p
               initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 2 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
@@ -28,7 +28,7 @@ export default (Sobre) => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 3 }}
+              transition={{ duration: 1.6 }}
               whileInView={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
             >
@@ -40,37 +40,39 @@ export default (Sobre) => {
             </motion.p>
           </TextAbout>
 
-          <motion.ul
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 3 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0 }}
-          >
-            <li>
-              Análise e Desenvolvimento de Sistemas - USF
-              <span>Em andamento - ( 2023 - 2025 )</span>
-            </li>
+          <section>
+            <motion.ul
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 3 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0 }}
+            >
+              <li>
+                Análise e Desenvolvimento de Sistemas - USF
+                <span>Em andamento - ( 2023 - 2025 )</span>
+              </li>
 
-            <li>
-              Curso Técnico de Informática - ETEC
-              <span>Concluído - ( 2023 )</span>
-            </li>
+              <li>
+                Curso Técnico de Informática - ETEC
+                <span>Concluído - ( 2023 )</span>
+              </li>
 
-            <li>
-              Curso AWS - Escola da Nuvem
-              <span>Incompleto - (2023)</span>
-            </li>
+              <li>
+                Curso AWS - Escola da Nuvem
+                <span>Incompleto - (2023)</span>
+              </li>
 
-            <li>
-              Curso CC50 de Ciência da Computação - Harvard
-              <span>Concluído - ( 2022 )</span>
-            </li>
+              <li>
+                Curso CC50 de Ciência da Computação - Harvard
+                <span>Concluído - ( 2022 )</span>
+              </li>
 
-            <li>
-              Curso Dominando o React - Dev Samurai
-              <span>Concluído - ( 2023 )</span>
-            </li>
-          </motion.ul>
+              <li>
+                Curso Dominando o React - Dev Samurai
+                <span>Concluído - ( 2023 )</span>
+              </li>
+            </motion.ul>
+          </section>
         </div>
       </ContentAbout>
     </>

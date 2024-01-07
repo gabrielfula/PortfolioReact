@@ -5,7 +5,6 @@ export const ContentAbout = styled.div`
   flex-direction: column;
   background: ${({ theme }) => theme.colors.primary};
   justify-content: center;
-  padding: 0 2rem 1rem 0;
   align-items: center;
   gap: 1rem;
   height: 100vh;
@@ -29,12 +28,7 @@ export const ContentAbout = styled.div`
       width: 3px;
       top: 0;
       bottom: 1rem;
-      height: 50vh;
       background: ${({ theme }) => theme.colors.pink};
-
-      @media (max-width: 420px) {
-        height: 35rem;
-      }
     }
   }
 
@@ -47,7 +41,7 @@ export const ContentAbout = styled.div`
     padding: 7px;
     border-radius: 5px;
     width: 80%;
-    font-size: 14px;
+    font-size: 12px;
 
     &::after {
       position: absolute;
@@ -84,7 +78,7 @@ export const Title = styled.div`
   text-align: center;
 
   @media (max-width: 992px) {
-    padding-top: 6rem;
+    /* padding-top: 4rem; */
   }
 `;
 
@@ -92,10 +86,10 @@ export const TextAbout = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   text-align: center;
   line-height: 1.1rem;
-  width: 50%;
+  width: 40%;
 
   @media (max-width: 992px) {
     width: 100%;
