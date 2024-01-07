@@ -6,10 +6,10 @@ export const ContentTec = styled.section`
   justify-content: center;
   margin-top: 3.5rem;
   padding: 20px;
-  height: 100%;
 
   h2 {
     text-align: center;
+    padding-top: 2rem;
   }
 `;
 
@@ -29,14 +29,6 @@ export const PositionIcons = styled.div`
     height: 130px;
     width: 200px;
     flex: 1 200px;
-    /* 
-    &:hover {
-      transition: 1s all ease-in-out;
-      p {
-        display: flex;
-        transition: 1s all ease-in-out;
-      }
-    } */
 
     p {
       color: ${({ theme }) => theme.colors.white};
