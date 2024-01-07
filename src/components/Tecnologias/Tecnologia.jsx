@@ -30,7 +30,6 @@ export default function Tecnologia() {
               exit={{ opacity: 0 }}
             >
               <SiHtml5 size={90} />
-              {/* <p>HTML5</p> */}
             </motion.div>
 
             <motion.div
