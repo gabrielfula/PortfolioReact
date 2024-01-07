@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerProjeto = styled.section`
-  height: 100%;
-  margin-top: 2rem;
-
-  /* @media (max-width: 968px) {
-    padding-top: 2rem;
-  } */
-
+  flex: 1;
   div {
     display: flex;
     justify-content: center;
@@ -28,13 +22,11 @@ export const ContainerProjeto = styled.section`
   }
 `;
 
-export const DescProjeto = styled.div`
+export const DescProjeto = styled.section`
   display: flex;
   justify-content: center;
-  background: #191919;
   border-radius: 10px;
   align-items: center;
-  /* height: auto; */
   margin: 0 5rem;
   padding: 5rem;
 
