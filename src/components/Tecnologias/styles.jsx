@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContentTec = styled.section`
-  background: ${({ theme }) => theme.colors.primary};
   width: 100%;
   justify-content: center;
   margin-top: 3.5rem;

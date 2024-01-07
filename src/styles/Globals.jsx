@@ -23,10 +23,7 @@ html {
     height: auto;
   }
 
-  section {
-    scroll-snap-align: center;
-    height: 100%;
-  }
+
 
  
   
